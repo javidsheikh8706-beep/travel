@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonamarg Alpine Cabs | Kashmir Taxi &amp; Mountain Transfers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .hero-bg {
+      background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.72), rgba(15, 23, 42, 0.85)),
+                        url('https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Top Announcement & Owner Customizer Trigger -->
+  <div class="bg-emerald-950 text-emerald-100 text-xs sm:text-sm py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>24/7 Srinagar Airport (SXR) Pickups &bull; Zoji La &amp; Ladakh Permit Verified Drivers</span>
+      </div>
+      <button onclick="toggleCustomizeModal()" class="bg-emerald-800 hover:bg-emerald-700 text-white font-medium px-3 py-1 rounded-md transition flex items-center gap-1.5 border border-emerald-600/50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        Customize Agency &amp; Rates
+      </button>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-lg bg-emerald-700 text-white flex items-center justify-center font-extrabold text-lg shadow-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
+        </div>
+        <div>
+          <span id="nav-brand-name" class="font-bold text-slate-900 text-base sm:text-lg tracking-tight block leading-none">Sonamarg Alpine Cabs</span>
+          <span id="nav-tagline" class="text-[11px] text-slate-500 font-medium">Main Market, Sonamarg &bull; J&amp;K</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+        <a href="#routes" class="hover:text-emerald-700 transition">Fixed Tariff</a>
+        <a href="#fleet" class="hover:text-emerald-700 transition">Our Fleet</a>
+        <a href="#why-us" class="hover:text-emerald-700 transition">Why Local Cabs</a>
+        <a href="#faq" class="hover:text-emerald-700 transition">Travel Info</a>
+      </nav>
+
+      <div class="flex items-center gap-2.5">
+        <a id="nav-call-btn" href="tel:+919906000000" class="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-slate-700 hover:text-emerald-700 px-3 py-2 rounded-lg border border-slate-200 hover:border-emerald-300 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span id="nav-phone-text">+91 99060 00000</span>
+        </a>
+        <a href="#book-now" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-sm transition">
+          Book Cab
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero + Instant Fare Estimator -->
+  <section id="book-now" class="hero-bg text-white py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-10 items-center">
+      <!-- Left Copy -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-3.5 py-1.5 text-xs sm:text-sm font-medium text-emerald-300">
+          <span>Trusted Kashmir Taxi Service &bull; Zero Hidden Charges</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+          Safe, Reliable Cabs Across <span class="text-emerald-400">Sonamarg, Srinagar &amp; Ladakh</span>
+        </h1>
+        <p class="text-slate-200 text-base sm:text-lg max-w-2xl leading-relaxed">
+          Punctual Srinagar Airport transfers, local glacier &amp; Baltal sightseeing, and high-altitude SUVs driven by experienced local mountain drivers.
+        </p>
+        <div class="grid grid-cols-3 gap-4 pt-2 max-w-lg">
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/10">
+            <div class="text-xl sm:text-2xl font-bold text-white">15 Min</div>
+            <div class="text-xs text-slate-300">Avg. Pickup Time</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/10">
+            <div class="text-xl sm:text-2xl font-bold text-emerald-400">100%</div>
+            <div class="text-xs text-slate-300">All-Inclusive Fare</div>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-xl p-3 border border-white/10">
+            <div class="text-xl sm:text-2xl font-bold text-white">4.9 &#9733;</div>
+            <div class="text-xs text-slate-300">Tourist Rating</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Booking Calculator Card -->
+      <div class="lg:col-span-5">
+        <div class="bg-white text-slate-900 rounded-2xl shadow-2xl p-6 sm:p-7 border border-slate-100">
+          <div class="flex items-center justify-between mb-5">
+            <div>
+              <h2 class="text-lg sm:text-xl font-bold text-slate-900">Instant Fare &amp; Cab Booking</h2>
+              <p class="text-xs text-slate-500">Toll, fuel &amp; driver allowance included</p>
+            </div>
+            <span class="bg-emerald-50 text-emerald-700 text-xs font-semibold px-2.5 py-1 rounded-full">Live Quote</span>
+          </div>
+
+          <form id="booking-form" class="space-y-4" onsubmit="handleWhatsAppBooking(event)">
+            <div>
+              <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Select Route / Package</label>
+              <select id="route-select" onchange="calculateFare()" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm font-medium text-slate-800 focus:border-emerald-600 focus:bg-white focus:outline-none">
+                <option value="sxr_sonamarg">Srinagar Airport (SXR) &harr; Sonamarg (One Way)</option>
+                <option value="sonamarg_local">Sonamarg Local Sightseeing (Thajiwas / Baltal / Zero Point)</option>
+                <option value="sonamarg_gulmarg">Sonamarg &harr; Gulmarg Transfer</option>
+                <option value="sonamarg_pahalgam">Sonamarg &harr; Pahalgam Transfer</option>
+                <option value="sonamarg_kargil">Sonamarg &harr; Kargil / Drass (via Zoji La)</option>
+                <option value="sonamarg_leh">Sonamarg &harr; Leh Ladakh (Full Day Highway Transfer)</option>
+                <option value="full_day">Full-Day Kashmir Custom Disposal (8 Hrs / 80 Km)</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Vehicle Type</label>
+                <select id="cab-select" onchange="calculateFare()" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm font-medium text-slate-800 focus:border-emerald-600 focus:bg-white focus:outline-none">
+                  <option value="sedan">Sedan (Dzire / Etios - 4 Pax)</option>
+                  <option value="suv" selected>SUV (Innova Crysta - 6/7 Pax)</option>
+                  <option value="tempo">Tempo Traveller (12-17 Pax)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Trip Type</label>
+                <select id="trip-type" onchange="calculateFare()" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2.5 text-sm font-medium text-slate-800 focus:border-emerald-600 focus:bg-white focus:outline-none">
+                  <option value="oneway">One-Way Drop</option>
+                  <option value="roundtrip">Round Trip (Same/Next Day)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Pickup Date</label>
+                <input type="date" id="pickup-date" required class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 text-sm text-slate-800 focus:border-emerald-600 focus:bg-white focus:outline-none" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Pickup Time</label>
+                <input type="time" id="pickup-time" value="09:00" required class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3 py-2 text-sm text-slate-800 focus:border-emerald-600 focus:bg-white focus:outline-none" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Your Name</label>
+                <input type="text" id="guest-name" placeholder="e.g. Aarav Sharma" required class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2 text-sm text-slate-800 focus:border-emerald-600 focus:bg-white focus:outline-none" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Hotel / Flight No.</label>
+                <input type="text" id="pickup-note" placeholder="e.g. Flight 6E-214 / Hotel Name" class="w-full rounded-xl border border-slate-300 bg-slate-50 px-3.5 py-2 text-sm text-slate-800 focus:border-emerald-600 focus:bg-white focus:outline-none" />
+              </div>
+            </div>
+
+            <!-- Estimated Price Box -->
+            <div class="bg-emerald-50/80 border border-emerald-200 rounded-xl p-4 flex items-center justify-between">
+              <div>
+                <span class="text-xs font-semibold uppercase tracking-wider text-emerald-800 block">Estimated Total Fare</span>
+                <span id="fare-meta" class="text-xs text-emerald-700">~85 km &bull; 2.5 hrs &bull; Inclusive of Tolls</span>
+              </div>
+              <div class="text-right">
+                <span id="estimated-fare" class="text-2xl sm:text-3xl font-extrabold text-emerald-900">&#8377;4,200</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+              <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-3 px-4 rounded-xl shadow-md transition flex items-center justify-center gap-2 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                Book via WhatsApp
+              </button>
+              <a id="hero-call-btn" href="tel:+919906000000" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 px-4 rounded-xl transition flex items-center justify-center gap-2 text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Instant Call Dispatch
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fixed Route Rate Card Section -->
+  <section id="routes" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+      <div>
+        <span class="text-emerald-700 font-semibold text-xs uppercase tracking-wider">Transparent Pricing</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Popular Kashmir &amp; Ladakh Taxi Tariff</h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-1">Fixed point-to-point rates with zero surge pricing. Click any route to pre-fill the booking calculator.</p>
+      </div>
+      <div class="text-xs text-slate-500 bg-white border border-slate-200 px-3.5 py-2 rounded-lg">
+        *Includes Fuel, Driver Allowance &amp; Parking. Snow-chain charges apply only during heavy snowfall.
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-900 text-white text-xs uppercase tracking-wider">
+              <th class="py-4 px-5 font-semibold">Route / Sightseeing Circuit</th>
+              <th class="py-4 px-4 font-semibold">Distance / Time</th>
+              <th class="py-4 px-4 font-semibold">Sedan (4 Pax)</th>
+              <th class="py-4 px-4 font-semibold">Innova Crysta (7 Pax)</th>
+              <th class="py-4 px-4 font-semibold">Tempo Traveller</th>
+              <th class="py-4 px-5 text-right font-semibold">Action</th>
+            </tr>
+          </thead>
+          <tbody id="tariff-table-body" class="divide-y divide-slate-200 text-sm">
+            <!-- Populated dynamically via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Showcase -->
+  <section id="fleet" class="py-16 bg-slate-100 px-4 sm:px-6 lg:px-8 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-emerald-700 font-semibold text-xs uppercase tracking-wider">Mountain-Ready Vehicles</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">Clean, Heated &amp; Inspected Fleet</h2>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">Every vehicle is equipped with roof carriers, high-grip mountain tires, first-aid kits, and experienced hill drivers.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-7">
+        <!-- Sedan -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+          <div class="h-48 bg-slate-200 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80" alt="Comfort Sedan Cab" class="w-full h-full object-cover" />
+            <span class="absolute top-3 left-3 bg-slate-900/85 text-white text-xs font-semibold px-2.5 py-1 rounded-md">Best for Couples &amp; Solo</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900">Swift Dzire / Toyota Etios</h3>
+              <p class="text-xs text-slate-500 mt-0.5">Comfort AC / Heater Sedan</p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                <li class="flex items-center gap-2">&#10003; <strong>4 Passengers</strong> + 2 Medium Suitcases</li>
+                <li class="flex items-center gap-2">&#10003; Dual-zone Cabin Heater &amp; Music System</li>
+                <li class="flex items-center gap-2">&#10003; Ideal for Srinagar Airport &amp; Valley Transfers</li>
+              </ul>
+            </div>
+            <button onclick="selectCabAndScroll('sedan')" class="mt-6 w-full py-2.5 px-4 rounded-xl border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold text-sm transition">
+              Select Sedan
+            </button>
+          </div>
+        </div>
+
+        <!-- Innova Crysta -->
+        <div class="bg-white rounded-2xl border-2 border-emerald-600 overflow-hidden shadow-md flex flex-col relative">
+          <div class="h-48 bg-slate-200 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80" alt="Innova Crysta SUV" class="w-full h-full object-cover" />
+            <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs font-semibold px-2.5 py-1 rounded-md">Most Popular for Families</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900">Toyota Innova Crysta / Scorpio-N</h3>
+              <p class="text-xs text-slate-500 mt-0.5">High-Torque 4x2 / 4x4 Mountain SUV</p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                <li class="flex items-center gap-2">&#10003; <strong>6 to 7 Passengers</strong> + Roof Luggage Carrier</li>
+                <li class="flex items-center gap-2">&#10003; Zoji La Pass &amp; Ladakh Highway Approved</li>
+                <li class="flex items-center gap-2">&#10003; Captain Seats &amp; Heavy Snow-Chain Ready</li>
+              </ul>
+            </div>
+            <button onclick="selectCabAndScroll('suv')" class="mt-6 w-full py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm transition">
+              Select Innova Crysta
+            </button>
+          </div>
+        </div>
+
+        <!-- Tempo Traveller -->
+        <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col">
+          <div class="h-48 bg-slate-200 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=800&q=80" alt="Force Tempo Traveller" class="w-full h-full object-cover" />
+            <span class="absolute top-3 left-3 bg-slate-900/85 text-white text-xs font-semibold px-2.5 py-1 rounded-md">Best for Groups &amp; Yatris</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="text-lg font-bold text-slate-900">Force Tempo Traveller (12 / 17 Seater)</h3>
+              <p class="text-xs text-slate-500 mt-0.5">Pushback Maharaja Seats &amp; High Roof</p>
+              <ul class="mt-4 space-y-2 text-sm text-slate-600">
+                <li class="flex items-center gap-2">&#10003; <strong>12 to 17 Passengers</strong> + Dedicated Boot</li>
+                <li class="flex items-center gap-2">&#10003; Wide Panoramic Windows for Valley Views</li>
+                <li class="flex items-center gap-2">&#10003; Ideal for Corporate, Trekking &amp; Family Groups</li>
+              </ul>
+            </div>
+            <button onclick="selectCabAndScroll('tempo')" class="mt-6 w-full py-2.5 px-4 rounded-xl border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-600 hover:text-white font-semibold text-sm transition">
+              Select Tempo Traveller
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Local Sonamarg Cabs -->
+  <section id="why-us" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-2xl border border-slate-200">
+        <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-4">01</div>
+        <h3 class="font-bold text-slate-900 mb-1.5">Union &amp; Permit Compliant</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Full access to Sonamarg local sightseeing points, Baltal base camp, and Zoji La pass without union checkpoint delays.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-200">
+        <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-4">02</div>
+        <h3 class="font-bold text-slate-900 mb-1.5">Flight-Tracked Airport Pickups</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Delayed flight into Sheikh ul-Alam International Airport (SXR)? Your driver tracks live arrival times at no extra waiting fee.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-200">
+        <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-4">03</div>
+        <h3 class="font-bold text-slate-900 mb-1.5">Native Mountain Drivers</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Drivers born and raised in Ganderbal &amp; Sonamarg who know black-ice patches, weather windows, and scenic photo stops.</p>
+      </div>
+      <div class="bg-white p-6 rounded-2xl border border-slate-200">
+        <div class="w-10 h-10 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mb-4">04</div>
+        <h3 class="font-bold text-slate-900 mb-1.5">Pay After Trip Starts</h3>
+        <p class="text-sm text-slate-600 leading-relaxed">Confirm your cab over WhatsApp or phone with zero advance required for local pickups—pay via UPI or cash directly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="py-14 bg-white border-t border-slate-200 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-extrabold text-slate-900 text-center mb-8">Frequently Asked Questions</h2>
+      <div class="space-y-4">
+        <details class="group bg-slate-50 rounded-xl p-5 border border-slate-200" open>
+          <summary class="font-semibold text-slate-900 cursor-pointer flex justify-between items-center">
+            Can outside Srinagar cabs do local sightseeing inside Sonamarg?
+            <span class="text-emerald-700 font-bold">+</span>
+          </summary>
+          <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+            Srinagar-registered commercial cabs can drop you at your Sonamarg hotel, but local sightseeing points (Thajiwas Glacier base, Baltal, Zero Point, and Fish Point) require local Sonamarg union-registered cabs. Booking directly with us covers both highway transfers and local sightseeing seamlessly.
+          </p>
+        </details>
+        <details class="group bg-slate-50 rounded-xl p-5 border border-slate-200">
+          <summary class="font-semibold text-slate-900 cursor-pointer flex justify-between items-center">
+            How long does the Srinagar Airport to Sonamarg drive take?
+            <span class="text-emerald-700 font-bold">+</span>
+          </summary>
+          <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+            The distance is approximately 85–90 km via NH-1 (Ganderbal – Kangan – Gagangir) and takes 2.5 to 3 hours depending on traffic and weather conditions.
+          </p>
+        </details>
+        <details class="group bg-slate-50 rounded-xl p-5 border border-slate-200">
+          <summary class="font-semibold text-slate-900 cursor-pointer flex justify-between items-center">
+            Do you provide 4x4 SUVs with snow chains in winter?
+            <span class="text-emerald-700 font-bold">+</span>
+          </summary>
+          <p class="text-sm text-slate-600 mt-3 leading-relaxed">
+            Yes. Between November and April, we deploy 4x4 Scorpio/Innova vehicles fitted with anti-skid snow chains whenever Gagangir or Sonamarg experiences fresh snowfall.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 pb-8 border-b border-slate-800">
+      <div>
+        <h3 id="footer-brand-name" class="text-white font-bold text-lg">Sonamarg Alpine Cabs</h3>
+        <p id="footer-address" class="text-sm mt-2">Near Taxi Stand, Main Market, Sonamarg, District Ganderbal, Jammu &amp; Kashmir 191203</p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-3">24/7 Dispatch Desk</h4>
+        <p class="text-sm">Phone: <a id="footer-phone" href="tel:+919906000000" class="text-emerald-400 hover:underline">+91 99060 00000</a></p>
+        <p class="text-sm mt-1">WhatsApp: <span id="footer-whatsapp" class="text-emerald-400">+91 99060 00000</span></p>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold text-sm uppercase tracking-wider mb-3">Popular Corridors</h4>
+        <p class="text-sm">Srinagar Airport (SXR) &bull; Sonamarg &bull; Gulmarg &bull; Pahalgam &bull; Kargil &bull; Leh Ladakh</p>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs gap-2">
+      <p>&copy; <span id="year"></span> <span id="footer-copyright-name">Sonamarg Alpine Cabs</span>. All rights reserved.</p>
+      <p>Registered J&amp;K Commercial Tourist Taxi Operator</p>
+    </div>
+  </footer>
+
+  <!-- Owner Customization Modal -->
+  <div id="customize-modal" class="fixed inset-0 z-50 hidden bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl border border-slate-200">
+      <div class="flex items-center justify-between mb-4">
+        <h3 class="text-lg font-bold text-slate-900">Customize Business Details</h3>
+        <button onclick="toggleCustomizeModal()" class="text-slate-400 hover:text-slate-700 font-bold text-xl">&times;</button>
+      </div>
+      <p class="text-xs text-slate-500 mb-4">Update your agency branding, contact numbers, or seasonal pricing multiplier. Changes save automatically in your browser.</p>
+      <div class="space-y-3 text-sm">
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Cab Agency Name</label>
+          <input type="text" id="cfg-name" class="w-full rounded-lg border border-slate-300 px-3 py-2" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Phone Number (Display)</label>
+          <input type="text" id="cfg-phone" class="w-full rounded-lg border border-slate-300 px-3 py-2" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">WhatsApp Number (Digits with Country Code, e.g. 919906000000)</label>
+          <input type="text" id="cfg-whatsapp" class="w-full rounded-lg border border-slate-300 px-3 py-2" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Office Address</label>
+          <input type="text" id="cfg-address" class="w-full rounded-lg border border-slate-300 px-3 py-2" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-600 mb-1">Seasonal Rate Adjustment (%)</label>
+          <select id="cfg-multiplier" class="w-full rounded-lg border border-slate-300 px-3 py-2">
+            <option value="0.9">Off-Season Discount (-10%)</option>
+            <option value="1">Standard Tariff (0%)</option>
+            <option value="1.15">Peak Summer / Yatra Season (+15%)</option>
+            <option value="1.25">Heavy Snow / 4x4 Chain Season (+25%)</option>
+          </select>
+        </div>
+      </div>
+      <div class="mt-6 flex items-center justify-end gap-2">
+        <button onclick="resetConfig()" class="px-3.5 py-2 text-xs font-semibold text-slate-600 hover:text-slate-900">Reset Default</button>
+        <button onclick="saveConfig()" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-4 py-2 rounded-lg">Apply Changes</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const DEFAULT_BUSINESS_CONFIG = {
+      name: "Sonamarg Alpine Cabs",
+      phone: "+91 99060 00000",
+      whatsapp: "919906000000",
+      address: "Near Taxi Stand, Main Market, Sonamarg, District Ganderbal, Jammu & Kashmir 191203",
+      multiplier: 1
+    };
+
+    const ROUTES_DATA = {
+      sxr_sonamarg: {
+        label: "Srinagar Airport (SXR) ↔ Sonamarg",
+        meta: "~88 km • 2.5 - 3 hrs • Toll & Parking Included",
+        prices: { sedan: 3200, suv: 4500, tempo: 7500 }
+      },
+      sonamarg_local: {
+        label: "Sonamarg Local Sightseeing (Thajiwas / Baltal / Zero Point)",
+        meta: "Full Day Local Union Circuit • Experienced Hill Driver",
+        prices: { sedan: 2800, suv: 3800, tempo: 6500 }
+      },
+      sonamarg_gulmarg: {
+        label: "Sonamarg ↔ Gulmarg Transfer",
+        meta: "~130 km • 4 hrs • Direct Valley Transfer",
+        prices: { sedan: 4500, suv: 6200, tempo: 9800 }
+      },
+      sonamarg_pahalgam: {
+        label: "Sonamarg ↔ Pahalgam Transfer",
+        meta: "~175 km • 4.5 - 5 hrs • Via Srinagar Bypass",
+        prices: { sedan: 5200, suv: 7200, tempo: 11500 }
+      },
+      sonamarg_kargil: {
+        label: "Sonamarg ↔ Kargil / Drass (via Zoji La)",
+        meta: "~125 km • 4 - 5 hrs • High-Altitude Zoji La Pass",
+        prices: { sedan: 5500, suv: 7500, tempo: 12000 }
+      },
+      sonamarg_leh: {
+        label: "Sonamarg ↔ Leh Ladakh Highway Transfer",
+        meta: "~340 km • Full Day • Zoji La, Namika La & Fotu La",
+        prices: { sedan: 11500, suv: 15500, tempo: 24000 }
+      },
+      full_day: {
+        label: "Full-Day Kashmir Custom Disposal (8 Hrs / 80 Km)",
+        meta: "Flexible Stops • Fuel & Driver Included",
+        prices: { sedan: 3500, suv: 4800, tempo: 8000 }
+      }
+    };
+
+    let config = JSON.parse(localStorage.getItem("cab_site_config")) || { ...DEFAULT_BUSINESS_CONFIG };
+
+    function formatINR(num) {
+      return "₹" + Math.round(num / 50) * 50 .toLocaleString("en-IN");
+    }
+
+    function formatCurrency(num) {
+      const rounded = Math.round(num / 50) * 50;
+      return "₹" + rounded.toLocaleString("en-IN");
+    }
+
+    function applyConfigToDOM() {
+      document.title = `${config.name} | Kashmir Taxi & Mountain Transfers`;
+      document.getElementById("nav-brand-name").textContent = config.name;
+      document.getElementById("footer-brand-name").textContent = config.name;
+      document.getElementById("footer-copyright-name").textContent = config.name;
+      document.getElementById("footer-address").textContent = config.address;
+
+      const cleanTel = config.phone.replace(/[^+\d]/g, "");
+      document.getElementById("nav-phone-text").textContent = config.phone;
+      document.getElementById("nav-call-btn").href = `tel:${cleanTel}`;
+      document.getElementById("hero-call-btn").href = `tel:${cleanTel}`;
+      document.getElementById("footer-phone").textContent = config.phone;
+      document.getElementById("footer-phone").href = `tel:${cleanTel}`;
+      document.getElementById("footer-whatsapp").textContent = config.phone;
+
+      renderTariffTable();
+      calculateFare();
+    }
+
+    function renderTariffTable() {
+      const tbody = document.getElementById("tariff-table-body");
+      tbody.innerHTML = "";
+      Object.entries(ROUTES_DATA).forEach(([key, route]) => {
+        const sedanPrice = formatCurrency(route.prices.sedan * config.multiplier);
+        const suvPrice = formatCurrency(route.prices.suv * config.multiplier);
+        const tempoPrice = formatCurrency(route.prices.tempo * config.multiplier);
+
+        const tr = document.createElement("tr");
+        tr.className = "hover:bg-emerald-50/40 transition";
+        tr.innerHTML = `
+          <td class="py-4 px-5 font-semibold text-slate-900">${route.label}</td>
+          <td class="py-4 px-4 text-slate-500 text-xs">${route.meta}</td>
+          <td class="py-4 px-4 font-bold text-slate-800">${sedanPrice}</td>
+          <td class="py-4 px-4 font-bold text-emerald-700">${suvPrice}</td>
+          <td class="py-4 px-4 font-bold text-slate-800">${tempoPrice}</td>
+          <td class="py-4 px-5 text-right">
+            <button onclick="quickSelectRoute('${key}')" class="text-xs font-semibold bg-slate-900 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg transition">
+              Book Now
+            </button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    function calculateFare() {
+      const routeKey = document.getElementById("route-select").value;
+      const cabType = document.getElementById("cab-select").value;
+      const tripType = document.getElementById("trip-type").value;
+
+      const route = ROUTES_DATA[routeKey];
+      let base = route.prices[cabType] * config.multiplier;
+      if (tripType === "roundtrip" && routeKey !== "sonamarg_local" && routeKey !== "full_day") {
+        base = base * 1.85; // 15% return discount built in
+      }
+
+      document.getElementById("estimated-fare").textContent = formatCurrency(base);
+      document.getElementById("fare-meta").textContent = route.meta;
+    }
+
+    function quickSelectRoute(routeKey) {
+      document.getElementById("route-select").value = routeKey;
+      calculateFare();
+      document.getElementById("book-now").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function selectCabAndScroll(cabType) {
+      document.getElementById("cab-select").value = cabType;
+      calculateFare();
+      document.getElementById("book-now").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function handleWhatsAppBooking(e) {
+      e.preventDefault();
+      const routeText = document.getElementById("route-select").selectedOptions[0].text;
+      const cabText = document.getElementById("cab-select").selectedOptions[0].text;
+      const tripText = document.getElementById("trip-type").selectedOptions[0].text;
+      const date = document.getElementById("pickup-date").value;
+      const time = document.getElementById("pickup-time").value;
+      const name = document.getElementById("guest-name").value;
+      const note = document.getElementById("pickup-note").value || "Not specified";
+      const fare = document.getElementById("estimated-fare").textContent;
+
+      const message = `Hello ${config.name}, I would like to book a cab:%0A%0A` +
+        `*Guest Name:* ${encodeURIComponent(name)}%0A` +
+        `*Route:* ${encodeURIComponent(routeText)}%0A` +
+        `*Vehicle:* ${encodeURIComponent(cabText)}%0A` +
+        `*Trip Type:* ${encodeURIComponent(tripText)}%0A` +
+        `*Date & Time:* ${encodeURIComponent(date)} at ${encodeURIComponent(time)}%0A` +
+        `*Hotel/Flight:* ${encodeURIComponent(note)}%0A` +
+        `*Quoted Fare:* ${encodeURIComponent(fare)}%0A%0APlease confirm cab availability.`;
+
+      const waNumber = config.whatsapp.replace(/\D/g, "");
+      window.open(`https://wa.me/${waNumber}?text=${message}`, "_blank");
+    }
+
+    function toggleCustomizeModal() {
+      const modal = document.getElementById("customize-modal");
+      if (modal.classList.contains("hidden")) {
+        document.getElementById("cfg-name").value = config.name;
+        document.getElementById("cfg-phone").value = config.phone;
+        document.getElementById("cfg-whatsapp").value = config.whatsapp;
+        document.getElementById("cfg-address").value = config.address;
+        document.getElementById("cfg-multiplier").value = String(config.multiplier);
+        modal.classList.remove("hidden");
+      } else {
+        modal.classList.add("hidden");
+      }
+    }
+
+    function saveConfig() {
+      config = {
+        name: document.getElementById("cfg-name").value.trim() || DEFAULT_BUSINESS_CONFIG.name,
+        phone: document.getElementById("cfg-phone").value.trim() || DEFAULT_BUSINESS_CONFIG.phone,
+        whatsapp: document.getElementById("cfg-whatsapp").value.trim() || DEFAULT_BUSINESS_CONFIG.whatsapp,
+        address: document.getElementById("cfg-address").value.trim() || DEFAULT_BUSINESS_CONFIG.address,
+        multiplier: parseFloat(document.getElementById("cfg-multiplier").value) || 1
+      };
+      localStorage.setItem("cab_site_config", JSON.stringify(config));
+      applyConfigToDOM();
+      toggleCustomizeModal();
+    }
+
+    function resetConfig() {
+      config = { ...DEFAULT_BUSINESS_CONFIG };
+      localStorage.removeItem("cab_site_config");
+      applyConfigToDOM();
+      toggleCustomizeModal();
+    }
+
+    // Initialize default date to tomorrow
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    document.getElementById("pickup-date").value = tomorrow.toISOString().split("T")[0];
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    applyConfigToDOM();
+  </script>
+</body>
+</html>
